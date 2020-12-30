@@ -1,0 +1,50 @@
+@import "../../material-ui/fonts.scss";
+
+:host {
+  display: flex;
+  flex-direction: row;
+
+  .left {
+    display: flex;
+
+    img {
+      height: 60px;
+      width: 100px;
+      background-color: white;
+    }
+  }
+
+  .space {
+    min-width: 50px;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+
+    .position {
+      font-family: $font-family-title;
+      font-size: $font-size-title2;
+
+      .period {
+        margin-left: 32px;
+        font-family: $font-family-default;
+        font-size: $font-size-small;
+      }
+    }
+
+    .company {
+      font-family: $font-family-default;
+      font-size: $font-size-default;
+      margin-top: 4px;
+      color: aqua;
+    }
+
+    .description {
+      margin-top: 16px;
+      max-width: 100%;
+      background-color: brown;
+      text-overflow: ellipsis;
+    }
+  }
+}

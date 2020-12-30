@@ -7,6 +7,11 @@
   font-size: $font-size-default;
   overflow-x: hidden !important;
 
+  mat-toolbar {
+    position: fixed;
+    top: 0;
+  }
+
   .ghazi {
     background-image: url("/assets/images/background.jpg");
     width: 100%;
@@ -45,6 +50,10 @@
         font-size: $font-size-section-title;
         font-weight: 400;
       }
+
+      button {
+        margin-top: 36px;
+      }
     }
   }
 
@@ -58,12 +67,22 @@
 
     .title {
       font-family: $font-family-title-demi-bold;
-      font-size: $font-size-section-title;
+      font-size: $font-size-title;
       width: 200px;
     }
 
     .space-title-content {
       min-height: 40px;
+    }
+
+    .content {
+      width: 100%;
+      background-color: blue;
+
+      app-experience {
+        max-width: 45%;
+        background-color: black;
+      }
     }
   }
 }

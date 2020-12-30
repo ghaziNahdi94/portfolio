@@ -4,13 +4,19 @@
 
 <div class="ghazi">
     <div class="content">
-        <img src="/assets/images/ghazi.png"/>
+        <img src="/assets/images/ghazi.png" />
         <div class="name">Ghazi Nehdi</div>
         <div class="position">Ingénieur Développeur FullStack</div>
+        <button mat-raised-button color="primary">Télécharger le CV</button>
     </div>
 </div>
 
 <div class="experience">
     <div class="title">Expérience</div>
     <span class="space-title-content"></span>
+    <div class="content">
+        <app-experience *ngFor="let experience of experiences" [logoPath]="experience.logoPath"
+            [company]="experience.company" [position]="experience.position" [period]="experience.period"
+            [description]="experience.description"></app-experience>
+    </div>
 </div>
