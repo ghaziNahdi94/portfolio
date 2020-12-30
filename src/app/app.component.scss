@@ -1,4 +1,69 @@
+@import "./material-ui/fonts.scss";
+
 :host {
   margin: 0;
-  padding: 0;  
+  padding: 0;
+  font-family: $font-family-default;
+  font-size: $font-size-default;
+  overflow-x: hidden !important;
+
+  .ghazi {
+    background-image: url("/assets/images/background.jpg");
+    width: 100%;
+    min-height: 80vh;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgba($color: #000000, $alpha: 0.7);
+      width: 100%;
+      min-height: 80vh;
+      color: white;
+
+      img {
+        border-radius: 50%;
+        height: 140px;
+        width: 130px;
+      }
+
+      .name {
+        margin-top: 16px;
+        text-align: center;
+        width: 100%;
+        font-family: $font-family-title;
+        font-size: $font-size-title;
+        font-weight: 500;
+      }
+
+      .position {
+        margin-top: 36px;
+        text-align: center;
+        width: 100%;
+        font-family: $font-family-title-demi-bold;
+        font-size: $font-size-section-title;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .experience {
+    display: flex;
+    flex-direction: column;
+    background-color: #c2185b;
+    color: white;
+    padding: 16px;
+    max-width: 100%;
+
+    .title {
+      font-family: $font-family-title-demi-bold;
+      font-size: $font-size-section-title;
+      width: 200px;
+    }
+
+    .space-title-content {
+      min-height: 40px;
+    }
+  }
 }
