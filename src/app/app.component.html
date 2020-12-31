@@ -1,5 +1,5 @@
 <mat-toolbar>
-    <span>Bienvenue sur mon site</span>
+    <span></span>
 </mat-toolbar>
 
 <div class="ghazi">
@@ -15,8 +15,64 @@
     <div class="title">Expérience</div>
     <span class="space-title-content"></span>
     <div class="content">
-        <app-experience *ngFor="let experience of experiences" [logoPath]="experience.logoPath"
-            [company]="experience.company" [position]="experience.position" [period]="experience.period"
-            [description]="experience.description"></app-experience>
+        <app-experience logoPath="/assets/images/s.png" company="Saint-Gobain"
+            position="Consultant Développeur FullStack JS" period="Depuis Sep 2020">
+            En tant que consultant de la société Amayas Consulting je suis en mission
+            avec l'entreprise Saint-Gobain pour participer à la création de leurs
+            applications <strong>aari customer</strong>, <strong>aari insurer</strong> et <strong>aari
+                fitter</strong>.
+            Ces 3 applications facilitent la communication entre les clients, les assurances et les garagistes
+            dans le processus de réparation des voitures.
+
+            <br>
+            <br>
+            <span class="app-name">aari insurer : </span>&nbsp;
+            L'assureur utilise cette application avec son navigateur pour initier et remplir le dossier de sinistre
+            du client, et ensuite soit il termine la saisit de tout le dossier et réserve un
+            rendez-vous chez le garagiste pour son client, soit il lui donne la main en envoyant
+            un lien d'accès à l'application aari customer à travers un SMS ou un email.
+
+            <br>
+            <br>
+            <span class="app-name">aari customer : </span>&nbsp;
+            Après l'initiation du dossier de sinistre à travers l'assureur, le client peut désormais
+            compléter la saisit et réserver son propre rendez-vous à travers cette application mobile.
+
+            <br>
+            <br>
+            <span class="app-name">aari fitter : </span>&nbsp;
+            Quand le rendez-vous de réparation de la voiture est réservé, le garagiste reçoit
+            une notification sous forme d'un email afin d'accéder à l'application, il peut voir
+            les détails du dossier de sinistre et toutes les pièces défectueuses ainsi leurs prix
+            et le coût de réparation totale.
+            <br>
+            <br>
+            <span style="font-weight: bold;">Technologie Frontend : </span>&nbsp; Angular, Angular material, TypeScript,
+            Nx,
+            HTML, CSS,
+            SCSS, Jest
+            <br>
+            <div class="logos">
+                <img src="/assets/logo/angular.png" alt="Angular logo" class="exp-logo" />
+                <img src="/assets/logo/material.png" alt="Angular material logo" class="exp-logo" />
+                <img src="/assets/logo/typescript.png" alt="TypeScript logo" class="exp-logo" />
+                <img src="/assets/logo/nx.png" alt="Nx logo" class="exp-logo" />
+                <img src="/assets/logo/htmlcss.png" alt="Angular logo" class="exp-logo" />
+                <img src="/assets/logo/jest.jpg" alt="Angular logo" class="exp-logo" />
+            </div>
+            <br>
+            <br>
+            <span style="font-weight: bold;">Technologie Backend : </span>&nbsp; Microsoft Azure, Node JS, TypeScript,
+            Jest, GraphQL, Okta, Twilio, SendGrid
+            <br>
+            <div class="logos">
+                <img src="/assets/logo/azure.png" alt="Angular logo" class="exp-logo" />
+                <img src="/assets/logo/nodejs.png" alt="Angular material logo" class="exp-logo" />
+                <img src="/assets/logo/typescript.png" alt="TypeScript logo" class="exp-logo" />
+                <img src="/assets/logo/jest.jpg" alt="Angular logo" class="exp-logo" />
+                <img src="/assets/logo/graphql.png" alt="Nx logo" class="exp-logo" />
+                <img src="/assets/logo/htmlcss.png" alt="Angular logo" class="exp-logo" />
+            </div>
+        </app-experience>
     </div>
 </div>

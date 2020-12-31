@@ -11,5 +11,4 @@ export class ExperienceComponent {
   @Input() public logoPath: string = "";
   @Input() public position: string = "";
   @Input() public period: string = "";
-  @Input() public description: string = "";
 }
