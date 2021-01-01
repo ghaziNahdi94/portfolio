@@ -21,6 +21,7 @@
   .right {
     display: flex;
     flex-direction: column;
+    width: auto;
 
     .position {
       font-family: $font-family-title;
@@ -30,7 +31,11 @@
         margin-left: 32px;
         font-family: $font-family-default;
         font-size: $font-size-small;
-        color: cornflowerblue;
+        color: #c2185b;
+      }
+
+      button {
+        margin-left: 32px;
       }
     }
 

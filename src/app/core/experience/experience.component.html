@@ -5,9 +5,15 @@
 <span class="space"></span>
 
 <div class="right">
-    <div class="position"><span>{{position}}</span> <span class="period">{{period}}</span></div>
+    <div class="position">
+        <span>{{position}}</span>
+        <span class="period">{{period}}</span>
+        <span style="flex: 1 1 auto;"></span>
+        <button mat-raised-button color="secondary" (click)="changeDisplayState()">{{showDescription ? 'Cacher' :
+            'Afficher'}} les détails</button>
+    </div>
     <div class="company">{{company}}</div>
-    <div class="description">
+    <div class="description" *ngIf="showDescription">
         <ng-content></ng-content>
     </div>
 </div>
