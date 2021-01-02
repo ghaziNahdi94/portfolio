@@ -13,6 +13,16 @@
     z-index: 99999;
     color: black;
     background-color: white;
+
+    .github {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: $font-size-small;
+      a {
+        margin-left: 9px;
+      }
+    }
   }
 
   .ghazi {

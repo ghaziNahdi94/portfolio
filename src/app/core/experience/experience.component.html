@@ -9,8 +9,9 @@
         <span>{{position}}</span>
         <span class="period">{{period}}</span>
         <span style="flex: 1 1 auto;"></span>
-        <button mat-raised-button color="secondary" (click)="changeDisplayState()">{{showDescription ? 'Cacher' :
-            'Afficher'}} les détails</button>
+        <button mat-raised-button [color]="showDescription ? 'primary' : 'secondary'"
+            (click)="changeDisplayState()">{{showDescription ? 'Cacher' :
+            'Afficher'}}</button>
     </div>
     <div class="company">{{company}}</div>
     <div class="description" *ngIf="showDescription">
