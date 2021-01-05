@@ -134,7 +134,7 @@ $primary-color: #c2185b;
     display: flex;
     flex-direction: column;
     width: auto;
-    padding: 16px 16px 32px 16px;
+    padding: 32px 16px 32px 16px;
     background-color: $primary-color;
     color: white;
     min-height: 100px;
@@ -184,7 +184,7 @@ $primary-color: #c2185b;
   .skills {
     display: flex;
     flex-direction: column;
-    padding: 16px 16px 32px 16px;
+    padding: 32px 16px 32px 16px;
 
     .logos {
       display: flex;
@@ -194,6 +194,66 @@ $primary-color: #c2185b;
       justify-content: center;
       justify-items: center;
       flex-wrap: wrap;
+    }
+  }
+
+  .certifications {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px 32px 16px;
+
+    .cards {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+
+      mat-card {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 300px;
+        height: 400px;
+
+        .title {
+          margin-top: 32px;
+          width: 100%; 
+          text-align: center;
+          font-family: $font-family-title-demi-bold;
+          font-size: $font-size-title2;
+        }
+
+        .date {
+          width: 100%;
+          margin-top: 48px;
+          text-align: center;
+
+          mat-chip-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+
+      mat-card:hover {
+        border-style: solid;
+        border-width: 3px;
+        border-color: $primary-color;
+      }
+
+      .space {
+        min-width: 260px;
+      }
     }
   }
 }

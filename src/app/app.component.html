@@ -11,6 +11,7 @@
         <div (click)="onExperienceClick()">Experience</div>
         <div (click)="onEducationClick()">Formation</div>
         <div (click)="onSkillsClick()">Compétences</div>
+        <div (click)="onCertificationsClick()">Certifications</div>
     </div>
 </mat-toolbar>
 
@@ -493,20 +494,65 @@
         <app-image name="cosmos" extension="png" alt="CosmosDB logo" [widthInPx]="70" [heightInPx]="50"
             [marginTopInPx]="16" [marginLeftInPx]="56">
         </app-image>
-        <app-image name="uml" extension="png" alt="UML logo" [widthInPx]="90" [heightInPx]="50"
-            [marginTopInPx]="16" [marginLeftInPx]="56">
+        <app-image name="uml" extension="png" alt="UML logo" [widthInPx]="90" [heightInPx]="50" [marginTopInPx]="16"
+            [marginLeftInPx]="56">
         </app-image>
-        <app-image name="scrum" extension="png" alt="SCRUM logo" [widthInPx]="70" [heightInPx]="50"
-            [marginTopInPx]="16" [marginLeftInPx]="56">
+        <app-image name="scrum" extension="png" alt="SCRUM logo" [widthInPx]="70" [heightInPx]="50" [marginTopInPx]="16"
+            [marginLeftInPx]="56">
         </app-image>
         <app-image name="tensorflow" extension="png" alt="Tensorflow logo" [widthInPx]="60" [heightInPx]="50"
             [marginTopInPx]="16" [marginLeftInPx]="56">
         </app-image>
-        <app-image name="keras" extension="png" alt="Keras logo" [widthInPx]="60" [heightInPx]="50"
-            [marginTopInPx]="16" [marginLeftInPx]="56">
+        <app-image name="keras" extension="png" alt="Keras logo" [widthInPx]="60" [heightInPx]="50" [marginTopInPx]="16"
+            [marginLeftInPx]="56">
         </app-image>
         <app-image name="ai" extension="png" alt="Intelligence Artificielle" [widthInPx]="70" [heightInPx]="50"
             [marginTopInPx]="16" [marginLeftInPx]="56">
         </app-image>
+    </div>
+</div>
+
+<div id="certifications" class="certifications">
+    <div class="title">Certifications</div>
+    <div class="cards">
+        <mat-card (click)="onJavaCertificateClick()">
+            <div style="width: 100%; text-align: center"><img src="/assets/logo/java.png" width="200" height="160" />
+            </div>
+
+            <div class="title">TestDome Java certificate</div>
+
+            <div class="date">
+                <mat-chip-list>
+                    <mat-chip color="primary">Janvier 2020</mat-chip>
+                    <mat-chip color="secondary">TestDome</mat-chip>
+                    <mat-chip color="secondary">Java</mat-chip>
+                </mat-chip-list>
+            </div>
+
+            <span style="flex: 1 1 auto"></span>
+            <div style="width: 100%; text-align: center">
+                <img src="/assets/logo/testdome.png" alt="TesDome Logo" width="90" height="90" />
+            </div>
+        </mat-card>
+        <span class="space"></span>
+        <mat-card (click)="onAngularCertificateClick()">
+            <div style="width: 100%; text-align: center"><img src="/assets/logo/angular.png" width="200" height="160" />
+            </div>
+
+            <div class="title">TestDome Angular certificate</div>
+
+            <div class="date">
+                <mat-chip-list>
+                    <mat-chip color="primary">Avril 2020</mat-chip>
+                    <mat-chip color="secondary">TestDome</mat-chip>
+                    <mat-chip color="secondary">Angular</mat-chip>
+                </mat-chip-list>
+            </div>
+
+            <span style="flex: 1 1 auto"></span>
+            <div style="width: 100%; text-align: center">
+                <img src="/assets/logo/testdome.png" alt="TesDome Logo" width="90" height="90" />
+            </div>
+        </mat-card>
     </div>
 </div>

@@ -38,6 +38,21 @@ export class AppComponent implements OnInit {
     }
   }
 
+  public onCertificationsClick(): void {
+    const skillsDiv = document.getElementById('certifications');
+    if (skillsDiv) {
+      window.scrollTo({top: skillsDiv.offsetTop - this.getToolbarHeight(), behavior: 'smooth'});
+    }
+  }
+
+  public onJavaCertificateClick(): void {
+    window.open('https://is.gd/zSL0z6', '_blank');
+  }
+
+  public onAngularCertificateClick(): void {
+    window.open('https://is.gd/7JS9aD', '_blank');
+  }
+
   private getToolbarHeight(): number {
     const toolbar = document.getElementById('toolbar');
     return toolbar ? toolbar.offsetHeight : 0;
