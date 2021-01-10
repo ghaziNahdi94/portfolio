@@ -1,0 +1,17 @@
+@import "../../material-ui/fonts.scss";
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px 32px 16px;
+
+  .logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+  }
+}

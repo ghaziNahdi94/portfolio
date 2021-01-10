@@ -1,0 +1,52 @@
+@import "../../material-ui/fonts.scss";
+
+.education {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 32px 16px 32px 16px;
+  background-color: $primary-color;
+  color: white;
+  min-height: 100px;
+
+  .entry {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+
+    img {
+      margin-right: 40px;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+
+      strong {
+        color: #0ff7ff;
+      }
+
+      .position {
+        font-family: $font-family-title-demi-bold;
+        font-size: $font-size-section-title;
+      }
+
+      .school {
+        margin-top: 9px;
+        font-family: $font-family-default;
+        font-size: $font-size-default;
+
+        a {
+          color: whitesmoke;
+          text-decoration: none;
+        }
+      }
+
+      .description {
+        margin-top: 9px;
+        font-family: $font-family-default;
+        font-size: $font-size-small;
+      }
+    }
+  }
+}

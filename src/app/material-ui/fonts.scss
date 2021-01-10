@@ -1,44 +1,56 @@
 @font-face {
-    font-family: rubik;
-    src: url(/assets/fonts/rubik/Rubik-Regular.ttf) format('opentype');
-  }
-  
-  @font-face {
-    font-family: rubik-medium;
-    src: url(/assets/fonts/rubik/Rubik-Medium.ttf) format('opentype');
-  }
-  
-  @font-face {
-    font-family: rubik-semi-bold;
-    src: url(/assets/fonts/rubik/Rubik-Bold.ttf) format('opentype');
-  }
-  
-  @font-face {
-    font-family: rubik-semi-bold;
-    src: url(/assets/fonts/rubik/Rubik-SemiBold.ttf) format('opentype');
-  }
-  
-  @font-face {
-    font-family: visby-cf;
-    src: url(/assets/fonts/visby-cf/VisbyCF-Medium.ttf) format('opentype');
-  }
-  
-  @font-face {
-    font-family: visby-cf-demi-bold;
-    src: url(/assets/fonts/visby-cf/Visby-CF-Demi-Bold.otf) format('opentype');
-  }
-  
-  $font-family-default: 'rubik';
-  $font-family-default-medium: 'rubik-medium';
-  $font-family-default-bold: 'rubik-bold';
-  $font-family-default-semi-bold: 'rubik-semi-bold';
-  
-  $font-family-title: 'visby-cf';
-  $font-family-title-demi-bold: 'visby-cf-demi-bold';
-  
-  $font-size-default: 16px;
-  $font-size-title: 32px;
-  $font-size-title2: 18px;
-  $font-size-small: 14px;
-  $font-size-big-button: 20px;
-  $font-size-section-title: 24px;
+  font-family: rubik;
+  src: url(/assets/fonts/rubik/Rubik-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: rubik-medium;
+  src: url(/assets/fonts/rubik/Rubik-Medium.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: rubik-semi-bold;
+  src: url(/assets/fonts/rubik/Rubik-Bold.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: rubik-semi-bold;
+  src: url(/assets/fonts/rubik/Rubik-SemiBold.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: visby-cf;
+  src: url(/assets/fonts/visby-cf/VisbyCF-Medium.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: visby-cf-demi-bold;
+  src: url(/assets/fonts/visby-cf/Visby-CF-Demi-Bold.otf) format("opentype");
+}
+
+$font-family-default: "rubik";
+$font-family-default-medium: "rubik-medium";
+$font-family-default-bold: "rubik-bold";
+$font-family-default-semi-bold: "rubik-semi-bold";
+
+$font-family-title: "visby-cf";
+$font-family-title-demi-bold: "visby-cf-demi-bold";
+
+$font-size-default: 16px;
+$font-size-title: 32px;
+$font-size-title2: 18px;
+$font-size-small: 14px;
+$font-size-big-button: 20px;
+$font-size-section-title: 24px;
+
+$primary-color: #c2185b;
+
+.title {
+  font-family: $font-family-title-demi-bold;
+  font-size: $font-size-title;
+  width: 200px;
+}
+
+.space-title-content {
+  min-height: 40px;
+}
