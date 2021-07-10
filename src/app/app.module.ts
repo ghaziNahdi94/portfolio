@@ -11,6 +11,8 @@ import { EducationSectionComponent } from './sections/education-section/educatio
 import { SkillsSectionComponent } from './sections/skills-section/skills-section.component';
 import { CertificationsSectionComponent } from './sections/certifications-section/certifications-section.component';
 import { OrganizationsSectionComponent } from './sections/organizations-section/organizations-section.component';
+import { FooterSectionComponent } from './sections/footer-section/footer-section.component';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { OrganizationsSectionComponent } from './sections/organizations-section/
     SkillsSectionComponent,
     CertificationsSectionComponent,
     OrganizationsSectionComponent,
+    FooterSectionComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +30,7 @@ import { OrganizationsSectionComponent } from './sections/organizations-section/
     BrowserAnimationsModule,
     MaterialUiModule,
     CoreModule,
+    LeafletModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

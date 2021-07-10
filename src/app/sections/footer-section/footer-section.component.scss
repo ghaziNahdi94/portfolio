@@ -1,0 +1,40 @@
+@import "../../material-ui/fonts.scss";
+
+:host {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding: 32px;
+
+    .location {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1 auto;
+        text-align: center;
+
+        p {
+            color: white;
+            font-family: $font-family-title-demi-bold;
+            font-size: $font-size-section-title;
+        }
+
+        .accounts {
+            margin-top: 60px;
+            a {
+                margin-left: 20px;
+            }
+        }
+
+        .tel {
+            margin-top: 60px;
+            font-size: $font-size-default;
+        }
+    }
+}

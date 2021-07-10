@@ -57,4 +57,8 @@ export class AppComponent implements OnInit {
       });
     }
   }
+
+  public onDownloadCV(): void {
+    window.open("/assets/CV_Ghazi.pdf");
+  }
 }
